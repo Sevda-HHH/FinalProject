@@ -8,8 +8,14 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Caladea&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="owl.carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>HomePage</title>
@@ -40,7 +46,7 @@
 
                         <div class="dropdown-books ">
                             <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
+                            <a href="bookItself.html">Link 2</a>
                             <a href="#">Link 3</a>
                         </div>
                     </li>
@@ -83,7 +89,7 @@
                     </ul>
                     <div class="basSearch  d-flex ">
                         <div>
-                            <a href="#" class="Search ml-3 ">
+                            <a href="ProductCategory.html" class="Search ml-3 ">
                                 <i class="fas fa-search"></i>
                                 <i class="fas fa-times d-none">
                                     <div class="search-nav d-none">
@@ -104,8 +110,8 @@
                         </div>
                         <div><a href="#" class="LogIn ml-3">Log In</a></div>
                         <div>
-                            <a href="#" class="Basket ml-3"><i class="fas fa-shopping-basket"> <span
-                                        class="basket-count">0</span></i></a>
+                            <a href="#" class="Basket ml-3    " data-toggle="modal" data-target="#cart"><i
+                                    class="fas fa-shopping-basket"> <span class="total-count">0</span></i></a>
 
                         </div>
                     </div>
@@ -119,7 +125,7 @@
 
 
     <!--            ----- SLIDER START -----          -->
-    <section class="section-slide">
+    <section class="section-slide" style="overflow:hidden !important;">
         <div class="container-fluid">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
@@ -148,7 +154,7 @@
 
     <!--            ------ SEARCH FORM START -----  -->
 
-    <section>
+    <section style="overflow:hidden !important;">
         <div class="container" style="margin-top:10px;">
             <div class="row">
                 <form class="form-inline my-2 my-lg-0 formBookCategory ">
@@ -164,7 +170,7 @@
     <!--            ------ SEARCH FORM END -----  -->
 
     <!--       ------ BOOK CATEGORIES START -----  -->
-    <section class="bookCategoriesMain " style="margin-top:80px;">
+    <section class="bookCategoriesMain " style="margin-top:80px;overflow: hidden !important;">
         <div class="container">
             <div class="row">
                 <div class="titleBC col-sm-12 col-lg-12 mb-5 mt-5">
@@ -175,6 +181,12 @@
                         Vivamus ac lacinia libero efficitur lorem
                     </p>
                 </div>
+                <div class="row">
+                    <div class="col">
+                        <button>Clear
+                            Cart</button></div>
+                </div>
+
 
                 <div class="categories">
                     <div class="container">
@@ -183,13 +195,16 @@
 
                             <div class="col-sm-6 pl-0 pr-0">
                                 <div class="col-sm-12 pl-0 pr-0">
-                                    <div class="card bg-dark text-white  bigImg-hover-zoom    ">
-                                        <img class="card-img" src="img/17.jpg" alt="Card image">
-                                        <div class="card-img-overlay">
-                                            <h5 class="card-title">Action</h5>
-                                            <p class="card-text">here is the categor of the book </p>
+                                    <a href="ProductCategory.html">
+                                        <div class="card bg-dark text-white  bigImg-hover-zoom    ">
+                                            <img class="card-img" src="img/17.jpg" alt="Card image">
+                                            <div class="card-img-overlay">
+                                                <h5 class="card-title">Action</h5>
+                                                <p class="card-text">here is the categor of the book </p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
+
                                 </div>
                                 <div class="col-sm-12 pl-0 pr-0 ">
                                     <div class="col-sm-6  float-left pl-0 pr-0 smallImg-hover-zoom   ">
@@ -253,7 +268,7 @@
     </section>
     <!--       ------ BOOK CATEGORIES END -----  -->
     <!--       ------ THE BEST SELECTION START  -----  -->
-    <section class="theBestSelection">
+    <section class="theBestSelection" style="overflow:hidden !important;">
         <div class="container">
             <div class="row">
                 <div class="titleBC col-sm-12 col-lg-12 mb-5 mt-5">
@@ -263,20 +278,24 @@
                     <p>
                         Vivamus ac lacinia libero efficitur lorem
                     </p>
+
+
                 </div>
-                <div class="col-lg-3 pl-1 ">
-                    <div class="card product-item" style="width: 18rem;">
-                        <img src="img/book-1.jpg" class="card-img-top" alt="...">
+                <div class="col-lg-3 col-md-6 pl-1 ">
+                    <div class="card bookCard product-item card-block " style="width: 18rem;">
+                        <img src="img/book-1.jpg" class="card-img-top  " alt="..."> tm
                         <div class="overlay d-flex flex-column justify-content-center">
                             <div class="eye"><i class="far fa-eye"></i></div>
                         </div>
-
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item BookName">Cras justo odio</li>
-                            <li class="list-group-item Author">Dapibus ac facilisis in</li>
-                            <li class="list-group-item BookPrice d-flex">
-                                <div class="price col-lg-6"><img src="img/AZN.png" alt=""></div>
-                                <div class="purchaseBasket col-lg-6"><i class="fas fa-shopping-basket"></i></div>
+                        <ul class="list-group list-group-flush  ">
+                            <li class="list-group-item BookName">Rebel of The Sands</li>
+                            <li class="list-group-item Author">Alwyn Hamilton</li>
+                            <li class="list-group-item d-flex">
+                                <div class="price col-lg-6"><img src="img/AZN.png" alt=""> 30</div>
+                                <div class="purchaseBasket add-to-cart col-lg-6" data-id="img/book-1.jpg" data-name="Banana" data-price="1.22"><i class="fas  fa-shopping-basket"><span
+                                            class="checkedBuy"><i class="d-none far fa-check-circle"></i></span>
+                                    </i><span class="addToBasket">+</span>
+                                </div>
                             </li>
                         </ul>
                         <div class="card-body">
@@ -296,7 +315,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 pl-1 ">
-                    <div class="card product-item" style="width: 18rem;">
+                    <div data-id='2' data-image="img/book-1.jpg" class="card bookCard product-item card-block" style="width: 18rem;">
                         <img src="img/book-2.jpg" class="card-img-top" alt="...">
                         <div class="overlay d-flex flex-column justify-content-center">
                             <div class="eye"><i class="far fa-eye"></i></div>
@@ -305,8 +324,11 @@
                             <li class="list-group-item BookName">Cras justo odio</li>
                             <li class="list-group-item Author">Dapibus ac facilisis in</li>
                             <li class="list-group-item d-flex">
-                                <div class="price col-lg-6"><img src="img/AZN.png" alt=""></div>
-                                <div class="purchaseBasket col-lg-6"><i class="fas fa-shopping-basket"></i></div>
+                                <div class="price col-lg-6"><img src="img/AZN.png" alt=""> 20</div>
+                                <div class="purchaseBasket add-to-cart col-lg-6" data-id="img/book-2.jpg" data-name="orange" data-price="1.22"><i class="fas fa-shopping-basket"><span
+                                            class="checkedBuy"><i class="d-none far fa-check-circle"></i></span>
+                                    </i><span class="addToBasket">+</span>
+                                </div>
                             </li>
                         </ul>
                         <div class="card-body">
@@ -326,7 +348,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 pl-1 ">
-                    <div class="card product-item" style="width: 18rem;">
+                    <div data-id='3' data-image="img/book-1.jpg" class="card bookCard product-item card-block" style="width: 18rem;">
                         <img src="img/book-5.jpg" class="card-img-top" alt="...">
                         <div class="overlay d-flex flex-column justify-content-center">
                             <div class="eye"><i class="far fa-eye"></i></div>
@@ -335,8 +357,11 @@
                             <li class="list-group-item BookName">Cras justo odio</li>
                             <li class="list-group-item Author">Dapibus ac facilisis in</li>
                             <li class="list-group-item d-flex">
-                                <div class="price col-lg-6"><img src="img/AZN.png" alt=""></div>
-                                <div class="purchaseBasket col-lg-6"><i class="fas fa-shopping-basket"></i></div>
+                                <div class="price col-lg-6"><img src="img/AZN.png" alt=""> 30</div>
+                                <div class="purchaseBasket add-to-cart col-lg-6" data-id="img/book-5.jpg" data-name="apple" data-price="1.22"><i class="fas fa-shopping-basket"><span
+                                            class="checkedBuy"><i class="d-none far fa-check-circle"></i></span>
+                                    </i><span class="addToBasket">+</span>
+                                </div>
                             </li>
                         </ul>
                         <div class="card-body">
@@ -356,7 +381,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 pl-1">
-                    <div class=" card product-item" style="width: 18rem;">
+                    <div class=" card bookCard product-item card-block" data-image="img/book-1.jpg" style="width: 18rem;">
                         <img src="img/book-4.jpg" class="card-img-top" alt="...">
                         <div class="overlay d-flex flex-column justify-content-center">
                             <div class="eye"><i class="far fa-eye"></i></div>
@@ -365,8 +390,11 @@
                             <li class="list-group-item BookName">Cras justo odio</li>
                             <li class="list-group-item Author">Dapibus ac facilisis in</li>
                             <li class="list-group-item d-flex">
-                                <div class="price col-lg-6"><img src="img/AZN.png" alt=""></div>
-                                <div class="purchaseBasket col-lg-6"><i class="fas fa-shopping-basket"></i></div>
+                                <div class="price col-lg-6"><img src="img/AZN.png" alt=""> 30</div>
+                                <div class="purchaseBasket add-to-cart col-lg-6" data-id="img/book-4.jpg" data-name="lemon" data-price="1.22"><i class="fas fa-shopping-basket"><span
+                                            class="checkedBuy"><i class="d-none far fa-check-circle"></i></span>
+                                    </i><span class="addToBasket">+</span>
+                                </div>
                             </li>
                         </ul>
                         <div class="card-body">
@@ -392,21 +420,234 @@
         </div>
     </section>
     <!--       ------ THE BEST SELECTION END  -----  -->
+    <!--       ------ THE EXCLUSIVE COLLECTIION START   -----  -->
+    <section class="exclusiveCollection " style="margin-top:150px !important; overflow: hidden !important;">
+        <div class="container-fluid">
+            <div class="row">
 
-    <script src="https://kit.fontawesome.com/58a22a9938.js " crossorigin="anonymous "></script>
-    <script src="http://code.jquery.com/jquery-1.10.2.js "></script>
-    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js "></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js "></script>
-    <script src="exponential.js "></script>
-    <script src="js/script.js "></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous ">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous ">
-    </script>
+                <div class="card bg-dark text-white">
+                    <img src="img/03Main.jpg" class="card-img" alt="...">
+                    <div class=" card-img-overlay justify-content-between d-flex ">
+                        <div class=" col-lg-4 exclusiveText ml-5 ">
+                            <h5 class=" card-title text-dark mb-3 "><span>Exclusive</span> Collection </h5>
+                            <h5 class=" card-title text-dark ">of book series </h5>
+                        </div>
+                        <div class=" col-lg-4 exclusiveText ">
+                            <p class=" card-text text-dark ">Start From $23, only this month</p>
+                            <button type=" button " class=" btn btn-success purchaseNow mt-4 ">purchase 59$</button>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--       ------ THE EXCLUSIVE COLLECTIION END -----  -->
+
+    <!--       ------BOOK COLLECTION START -----  -->
+    <section class=" bookCollection " style=" overflow:hidden !important; ">
+        <div class=" container ">
+            <div class=" row d-flex ">
+                <div class=" titleBC col-sm-12 col-lg-12 mb-5 mt-5 ">
+                    <h1>
+                        Book Collection
+                    </h1>
+                    <p>
+                        Vivamus ac lacinia libero efficitur lorem
+                    </p>
+                </div>
+                <div class=" card " style=" width: 360px !important;height: 360px !important; ">
+                    <img src=" img/16.jpg " style=" width: 360px !important;height: 360px !important; " class=" card-img-top " alt=" ... ">
+                    <div class=" card-body d-flex justify-content-between ">
+                        <p class=" card-text col-lg-8 ">Be an Artist in 100 Days
+                        </p>
+                        <p style=" font-style: italic; color: #616161; "><span class=" bookCount ">1</span> Book(s)
+                        </p>
+                    </div>
+                </div>
+                <div class=" card " style=" width: 360px !important;height: 360px !important; ">
+                    <img src=" img/15.jpg " style=" width: 360px !important;height: 360px !important; " class=" card-img-top " alt=" ... ">
+                    <div class=" card-body d-flex justify-content-between ">
+                        <p class=" card-text col-lg-8 ">Music to My Ear
+                        </p>
+                        <p style=" font-style: italic; color: #616161; "><span class=" bookCount ">1</span> Book(s)
+                        </p>
+                    </div>
+                </div>
+                <div class=" card " style=" width: 360px !important;height: 360px !important; ">
+                    <img src=" img/book-3.jpg " style=" width: 360px !important;height: 360px !important; " class=" card-img-top " alt=" ... ">
+                    <div class=" card-body d-flex justify-content-between ">
+                        <p class=" card-text col-lg-8 ">Sience Fiction Series.</p>
+                        <p style=" font-style: italic; color: #616161; "><span class=" bookCount ">1</span> Book(s)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--       ------ BOOK COLLECTIION END -----  -->
+
+    <!--       ------ EMAIL AND INSTAGRAM START  -----  -->
+    <section class=" emailSifgnUp mb-5 " style=" margin-top:150px !important; overflow: hidden !important; ">
+        <div class=" container ">
+            <div class=" row d-flex justify-content-center ">
+                <div class=" titleBC col-sm-12 col-lg-12 mb-3 ">
+                    <h1>
+                        <i><b>Subscribe</b> to be aware of news </i>
+                    </h1>
+                </div>
+                <div class=" input-group col-lg-6 ">
+                    <input type=" text " class=" form-control " placeholder=" Your email address " aria-label=" Recipient ' s username " aria-describedby=" button-addon2 ">
+                    <div class=" input-group-append ">
+                        <button class=" btn btn-outline-secondary btn-success " type=" button " id=" button-addon2 ">Sign Up </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style=" height: 300px; width:100%; overflow: hidden !important;margin-top: 100px !important; " class=" mt-5 ">
+        <div class=" owl-carousel owl-theme ">
+            <div class=" item " style=" height: 173.75px; width:173.75px !important; ">
+                <img src=" img/inst-10.jpg " style=" height: 173.75px; width:173.75px !important " alt=" ">
+            </div>
+            <div class=" item " style=" height: 173.75px; width:173.75px !important; ">
+                <img src=" img/inst-2.jpg " style=" height: 173.75px; width:173.75px !important; " alt=" ">
+            </div>
+            <div class=" item " style=" height: 170.75px;width:173.75px !important; ">
+                <img src=" img/inst-3.jpg " style=" height: 173.75px; widows: 173.75px !important; " alt=" ">
+            </div>
+            <div class=" item " style=" height: 170.75px; width:173.75px !important; ">
+                <img src=" img/inst-4.jpg " style=" height: 173.75px; width:173.75px " alt=" ">
+            </div>
+            <div class=" item " style=" height: 170.75px; width:173.75px !important; ">
+                <img src=" img/inst-5.jpg " style=" height: 173.75px; width:173.75px " alt=" ">
+            </div>
+            <div class=" item " style=" height: 170.75px; width:173.75px !important; ">
+                <img src=" img/inst-6.jpg " style=" height: 173.75px; width:173.75px " alt=" ">
+            </div>
+            <div class=" item " style=" height: 170.75px; width:173.75px !important; ">
+                <img src=" img/inst-7.jpg " style=" height: 173.75px; width:173.75px " alt=" ">
+            </div>
+            <div class=" item " style=" height: 170.75px;width:173.75px !important; ">
+                <img src=" img/inst-8.jpg " style=" height: 173.75px; width:173.75px " alt=" ">
+            </div>
+            <div class=" item " style=" height: 170.75px;width:173.75px !important; ">
+                <img src=" img/inst-9.jpg " style=" height: 170.75px;width:173.75px !important; " alt=" ">
+            </div>
+            <div class=" item " style=" height: 170.75px;width:173.75px !important; ">
+                <img src=" img/inst-10.jpg " style=" height: 170.75px; width:173.75px !important; " alt=" ">
+            </div>
+            <div class=" item " style=" height: 170.75px;width:173.75px !important; ">
+                <img src=" img/inst-2.jpg " style=" height: 170.75px;width:173.75px !important; " alt=" ">
+            </div>
+            <div class=" item " style=" height: 170.75px;width:173.75px !important; ">
+                <img src=" img/inst-3.jpg " style=" height: 170.75px;width:173.75px !important; " alt=" ">
+            </div>
+
+        </div>
+        <div class=" insta ">
+            <a href=" https://www.instagram.com/p/B93E02yg8ZcNs2hXEBQh11xgMxzQkbiuYVtJdU0/ " class=" text-dark "> <i class=" text-decoration-none fab fa-instagram "></i></a>
+        </div>
+    </section>
+
+    <!--       ------  EMAIL AND INSTAGRAM END  -----  -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  FOOTER START  -->
+    <footer style="height:100%;  width:100%; background-color:#ffe6e6!important; ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul>
+                        <li> <b>Smth</b> </li>
+                        <li>i dont knoe </li>
+                        <li>what to </li>
+                        <li>write</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <li><b>Office</b></li>
+                        <li>Tabriz street</li>
+                        <li>94/1,ap.7</li>
+                        <li>Ganja,Azderbaijan</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <li> <b>Websites</b> </li>
+                        <li> <a href="">Facebook -></a> </li>
+                        <li><a href="">Instagram</a> </li>
+                        <li><a href="">Twitter -></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <li><b>Contact</b></li>
+                        <li><a href="">Phone: +(994)-70-804-78-26</a></li>
+                        <li><a href="">SevdaMh@code.edu.az</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span
+                        class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear
+                    Cart</button></div>
+        </div>
+    </nav>
+
+    <!-- FOOTER END  -->
+
+    <script src=" https://kit.fontawesome.com/58a22a9938.js " crossorigin=" anonymous "></script>
+    <script src=" http://code.jquery.com/jquery-1.10.2.js "></script>
+    <script src=" http://code.jquery.com/ui/1.11.2/jquery-ui.js "></script>
+    <script src=" http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js "></script>
+    <script src=" exponential.js "></script>
+    <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity=" sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin=" anonymous ">
+    </script>
+    <script src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity=" sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin=" anonymous ">
+    </script>
+    <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity=" sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin=" anonymous ">
+    </script>
+    <script src="owl.carousel/owl.carousel.min.js"></script>
+    </script>
+    <script src="js/native.js"></script>
+    <script src="js/Basket.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src=" js/script.js ">
+    </script>
 
 </body>
 
-</html
+</html>
