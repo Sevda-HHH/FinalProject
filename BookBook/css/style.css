@@ -450,7 +450,14 @@
         color: white !important;
     }
     
-    .emailSifgnUp .btn-success {
+    .emailSifgnUp .btn-danger {
+        padding: 12px 35px 12px 35px !important;
+        background-color: #eb8367 !important;
+        border: #eb8367 1px solid !important;
+        color: white !important;
+    }
+    
+    .delete-item .btn-danger {
         padding: 12px 35px 12px 35px !important;
         background-color: #eb8367 !important;
         border: #eb8367 1px solid !important;
@@ -1045,3 +1052,137 @@
         height: 200px;
         align-self: center;
     }
+    /* LOGIN PAGE START */
+    
+    .LoginH {
+        font-family: 'Caladea', sans-serif;
+        font-size: 20px;
+    }
+    
+    .loginMain .form-control {
+        width: 100% !important;
+        padding-left: 150px !important;
+        padding-right: 150px !important;
+    }
+    /* LOGIN PAGE END  */
+    /* REGISTER START  */
+    /* date of birth start  */
+    
+    .form-group #birthday {
+        border-radius: 3px !important;
+        border: #d4d4d4 1px solid;
+    }
+    /* date of birth end  */
+    /* REGISTER END  */
+    /* CONTACT US START */
+    
+    .contactUs input {
+        border-radius: 0 !important;
+    }
+    
+    .contactUs textarea {
+        border-radius: 0 !important;
+    }
+    
+    .button-searchEmail {
+        background-color: #eb8367 !important;
+        color: white !important;
+        border-color: #eb8367 !important;
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+    
+    .button-searchEmail:hover {
+        background-color: black !important;
+        color: white !important;
+        border-color: black !important;
+    }
+    
+    .HotLineCall {
+        height: 100px !important;
+        background: linear-gradient(125deg, #eb8367, rgba(230, 179, 103, 0.89)) !important;
+    }
+    /* CONTACT US END  */
+    /* ABOUT US START  */
+    
+    .allAboutBooks {
+        overflow: hidden !important;
+        padding-top: 100px !important;
+        height: 500px !important;
+    }
+    
+    .allAboutBooks .titleAbout h1 {
+        padding-top: 150px !important;
+        font-size: 60px !important;
+        font-family: 'Caladea', sans-serif !important;
+    }
+    
+    .allAboutBooks .titleAbout p {
+        font-family: 'Caladea', sans-serif !important;
+        font-size: 20px !important;
+        color: #616161;
+    }
+    
+    .titleWho {
+        padding-top: 100px !important;
+        text-align: center !important;
+    }
+    
+    .titleWho h1 {
+        font-family: 'Caladea', sans-serif !important;
+        padding-top: 20px !important;
+    }
+    
+    .titleWho i {
+        font-size: 50px !important;
+        color: #b2dc71 !important;
+    }
+    
+    .whoWeAre .owl-next {
+        display: none !important;
+    }
+    
+    .whoWeAre .owl-prev {
+        display: none !important;
+    }
+    
+    .ourHistory h2 {
+        margin-bottom: 20px !important;
+        font-family: 'Caladea', sans-serif !important;
+    }
+    
+    .ourHistory p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 17px;
+        color: #616161;
+    }
+    
+    .ourHistory {
+        padding-left: 80px !important;
+        margin-top: 90px !important;
+    }
+    
+    .browseAll i {
+        padding: 20px;
+        font-size: 50px !important;
+        color: #b2dc71 !important;
+    }
+    
+    .browseAll .title {
+        padding: 10px;
+    }
+    
+    .browseAll p {
+        color: #616161;
+    }
+    
+    .browseAll .btn-success {
+        background-color: #eb8367 !important;
+        color: white !important;
+        border-color: #eb8367 !important;
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+        border-radius: 0% !important;
+        float: left;
+    }
+    /* ABOUT US END  */
