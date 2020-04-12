@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/BookBookTitle.JPG" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caladea&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="owl.carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Product List</title>
+</head>
+
+<body>
+    <!-- HEADER START      HEADER START     HEADER START     -->
+    <header>
+        <div class="container-fluid  headMenu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand" href="#"><img src="img/BookBook.JPG" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <li class="nav-item  dropdown ">
+                        <a class="nav-link HomePage" href="#">HomePage</a>
+                        <div class=" dropdown-homepage ">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item  dropdown">
+                        <a class="nav-link books" href="#">Books</a>
+
+                        <div class="dropdown-books ">
+                            <a href="#">Link 1</a>
+                            <a href="bookItself.html">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item  dropdown">
+                        <a class="nav-link shop" href="#">Shop</a>
+                        <div class="dropdown-shop ">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item  dropdown">
+                        <a class="nav-link pages" href="#">Pages</a>
+                        <div class="dropdown-pages  ">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link blog" href="#">Blogs</a>
+                        <div class="dropdown-blog  ">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link landing" href="#">Landing</a>
+                        <div class="dropdown-landing ">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    </ul>
+                    <div class="basSearch  d-flex ">
+                        <div>
+                            <a href="ProductCategory.html" class="Search ml-3 ">
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-times d-none">
+                                    <div class="search-nav d-none">
+                                        <div class="row ">
+                                            <form class="form-inline my-2 my-lg-0 ">
+                                                <input class="form-control mr-sm-2  " type="search" placeholder="Search"
+                                                    aria-label="Search">
+                                                <button class="btn btn-outline-success button-search my-2 my-sm-0  "
+                                                    type="submit">Search</button>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </i>
+
+                            </a>
+
+                        </div>
+                        <div><a href="#" class="LogIn ml-3">Log In</a></div>
+                        <div>
+                            <a href="#" class="Basket ml-3    " data-toggle="modal" data-target="#cart"><i
+                                    class="fas fa-shopping-basket"> <span class="total-count">0</span></i></a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+
+
+    </header>
+    <!--   -----   ----- HEADER END     HEADER END   HEADER END    ---- --- -- -->
+    <section style="padding-top:150px !important;overflow:hidden !important;">
+        <div class="col-lg-12">
+            <h1 class="mb-5 titleBC d-flex justify-content-center">
+                Your Order
+            </h1>
+            <table class="table show-cart " id="GeneralCardList">
+                <tbody>
+                </tbody>
+            </table>
+            <div>Total price: $<span class="total-cart"></span></div>
+            <div class="modal-footer top "> <button type="button" class="btn btn-danger">Go Back</button>
+                <button type="button" class="btn btn-success">Order now</button>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  FOOTER START  -->
+    <footer style="height:100%;  width:100%; background-color:#ffe6e6!important; ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul>
+                        <li> <b>Smth</b> </li>
+                        <li>i dont knoe </li>
+                        <li>what to </li>
+                        <li>write</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <li><b>Office</b></li>
+                        <li>Tabriz street</li>
+                        <li>94/1,ap.7</li>
+                        <li>Ganja,Azderbaijan</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <li> <b>Websites</b> </li>
+                        <li> <a href="">Facebook -></a> </li>
+                        <li><a href="">Instagram</a> </li>
+                        <li><a href="">Twitter -></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <li><b>Contact</b></li>
+                        <li><a href="">Phone: +(994)-70-804-78-26</a></li>
+                        <li><a href="">SevdaMh@code.edu.az</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span
+                        class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear
+                    Cart</button></div>
+        </div>
+    </nav>
+
+    <!-- FOOTER END  -->
+
+    <script src=" https://kit.fontawesome.com/58a22a9938.js " crossorigin=" anonymous "></script>
+    <script src=" http://code.jquery.com/jquery-1.10.2.js "></script>
+    <script src=" http://code.jquery.com/ui/1.11.2/jquery-ui.js "></script>
+    <script src=" http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js "></script>
+    <script src=" exponential.js "></script>
+    <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity=" sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin=" anonymous ">
+    </script>
+    <script src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity=" sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin=" anonymous ">
+    </script>
+    <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity=" sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin=" anonymous ">
+    </script>
+    <script src="owl.carousel/owl.carousel.min.js"></script>
+    </script>
+    <script src="js/native.js"></script>
+    <script src="js/Basket.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src=" js/script.js ">
+    </script>
+
+</body>
+
+</html>
