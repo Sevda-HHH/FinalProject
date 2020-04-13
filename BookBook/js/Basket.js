@@ -147,7 +147,6 @@ $('.add-to-cart').click(function(event) {
 
     var name = $(this).data('name');
     var image = $(this).data('id');
-
     var price = Number($(this).data('price'));
     shoppingCart.addItemToCart(image, name, price, 1);
     displayCart();
